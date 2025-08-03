@@ -40,7 +40,6 @@ def create_search():
         search_generator = search(
             query,
             num_results=num_results,
-            unique=unique,
             safe=safe,
             advanced=advanced
         )
@@ -137,4 +136,5 @@ def create_search():
 
 
 if __name__ == "__main__":
+
     app.run(host='0.0.0.0', port=5000)
